@@ -59,6 +59,9 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Reference Include="CommanderCat101.ContentSettings">
+        <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\BepInEx\plugins\CommanderCat101.ContentSettings.dll</HintPath>
+      </Reference>
       <Reference Include="Notest.ConfigSync">
         <HintPath>..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Content Warning\BepInEx\plugins\Notest.ConfigSync.dll</HintPath>
       </Reference>
