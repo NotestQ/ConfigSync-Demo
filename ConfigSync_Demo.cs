@@ -29,6 +29,7 @@ namespace ConfigSync_Demo
             "Random number.");
 
             Configuration SyncedConfig = new Configuration("ConfigDemo", "ConfigSync_ConfigDemo", BepInExConfig.Value);
+            // You can also use a getter (int SyncedConfigValue => (int)SyncedConfig.CurrentValue;) so the variable automatically updates, or you can use SyncedConfig.CurrentValue directly
             int SyncedConfigValue = (int)SyncedConfig.CurrentValue;
 
             BepInExConfig.SettingChanged += delegate
