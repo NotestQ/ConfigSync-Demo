@@ -24,8 +24,9 @@ namespace ConfigSync_Demo
 
         internal static int DefaultValue = new System.Random().Next(1, 20);
         internal static Configuration SyncedConfig = new Configuration("ConfigDemo", "ConfigSync_ConfigDemo", DefaultValue);
+        // You can also use a getter (internal int SyncedConfigValue => (int)SyncedConfig.CurrentValue;) so the variable automatically updates, or you can use SyncedConfig.CurrentValue directly
         internal int SyncedConfigValue = (int)SyncedConfig.CurrentValue;
-
+        
         private void Awake()
         {
             Logger = base.Logger;
